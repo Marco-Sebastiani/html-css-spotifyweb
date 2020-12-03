@@ -18,6 +18,15 @@ ul{
   list-style: none;
 }
 
+
+.p-l{
+  padding-left: 20px;
+}
+
+.p-r{
+  padding-right: 20px;
+}
+
 .container {
   width: 100%;
   height: 100vh;
@@ -32,7 +41,6 @@ main {
 main .main-menu {
   width: 220px;
   height: 100%;
-  padding: 0 20px;
   background-color: black;
   display: flex;
   flex-direction: column;
@@ -61,8 +69,15 @@ main .main-menu .img-diplay-xs img{
   width: 15%;
 }
 
+main .main-menu .box-ico .border-lime{
+  border-left: 3px solid #adff2f;
+}
+
+
+
 main .main-menu .box-ico span {
   padding-left: 6px;
+  font-size: 13px;
 }
 
 main .main-menu .box-ico img{
@@ -75,7 +90,9 @@ main .main-menu .main-playlist {
   flex-grow: 1;
   min-height: 150px;
   overflow-y: hidden;
+  padding-left: 20px;
 }
+
 
 main .main-menu .main-playlist span::before{
   content: '+';
@@ -85,15 +102,16 @@ main .main-menu .main-playlist span::before{
   font-size: 30px;
   font-weight: 700;
   background-color: #acacac;
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
   vertical-align: middle;
   margin-right: 8px;
 }
 
 main .main-menu .main-playlist ul{
   height: 100%;
+  font-size: 14px;
   overflow-y: auto;
 }
 
@@ -181,7 +199,16 @@ footer {
     margin-top: 5px;
   }
 
-  .box-ico span{
+  main .box-ico span{
     display: none;
   }
+
+  main .main-playlist{
+    display: none;
+  }
+
+  main .menu-nav-bottom{
+    display: none;
+  }
+
 }
