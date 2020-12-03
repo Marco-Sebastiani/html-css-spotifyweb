@@ -14,6 +14,10 @@ a{
   color: #ababab;
 }
 
+ul{
+  list-style: none;
+}
+
 .container {
   width: 100%;
   height: 100vh;
@@ -28,9 +32,34 @@ main {
 main .main-menu {
   width: 220px;
   height: 100%;
+  padding: 0 20px;
   background-color: black;
   display: flex;
   flex-direction: column;
+}
+
+main .main-menu li{
+  margin: 10px 0;
+}
+
+main .main-menu .logo-menu{
+  height: 85px;
+  line-height: 85px;
+}
+
+main .main-menu .logo-menu img{
+  width: 70%;
+  vertical-align: middle;
+}
+
+main .main-menu .box-ico span {
+  padding-left: 6px;
+}
+
+main .main-menu .box-ico img{
+  width: 15%;
+  color: #ababab;
+  vertical-align: middle;
 }
 
 main .main-menu .main-playlist {
@@ -39,14 +68,51 @@ main .main-menu .main-playlist {
   overflow-y: auto;
 }
 
-.box-main-content {
+main .main-menu .main-playlist ul{
+  height: 100%;
+  overflow-y: auto;
+
+}
+
+main .main-menu .main-playlist h3{
+  text-transform: uppercase;
+}
+
+main .main-menu .menu-nav-bottom .app-install,
+main .main-menu .menu-nav-bottom .user{
+  padding-bottom: 10px;
+}
+
+main .main-menu .menu-nav-bottom .app-install {
+  border-bottom: 1px solid #fff;
+  margin-bottom: 10px;
+
+}
+
+main .main-menu .menu-nav-bottom .app-install span{
+
+}
+
+main .main-menu .menu-nav-bottom .app-install img,
+main .main-menu .menu-nav-bottom .user img {
+  width: 20px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+main .main-menu .menu-nav-bottom .user img{
+  background-color: grey;
+  border-radius: 50%;
+}
+
+main .box-main-content {
   width: calc(100% - 220px);
   height: 100%;
   padding-top: 85px;
   background-color: #141922;
 }
 
-.cta {
+main .box-main-content .cta {
   position: fixed;
   top:0;
   right:0;
@@ -57,7 +123,7 @@ main .main-menu .main-playlist {
   line-height: 85px;
   text-align: right;
 }
-.cta .btn {
+main .box-main-content .cta .btn {
   padding: 10px 27px;
   border-radius: 20px;
   border: 1px solid #fff;
