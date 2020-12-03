@@ -64,8 +64,8 @@ main .main-menu .box-ico img{
 
 main .main-menu .main-playlist {
   flex-grow: 1;
-  min-height: 350px;
-  overflow-y: auto;
+  min-height: 250px;
+  overflow-y: hidden;
 }
 
 main .main-menu .main-playlist ul{
@@ -89,8 +89,9 @@ main .main-menu .menu-nav-bottom .app-install {
 
 }
 
-main .main-menu .menu-nav-bottom .app-install span{
-
+main .main-menu .menu-nav-bottom .user span{
+  color: #fff;
+  font-weight: 700;
 }
 
 main .main-menu .menu-nav-bottom .app-install img,
