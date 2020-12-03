@@ -39,7 +39,7 @@ main .main-menu {
 }
 
 main .main-menu li{
-  margin: 10px 0;
+  margin: 15px 0;
 }
 
 main .main-menu .logo-menu{
@@ -64,18 +64,33 @@ main .main-menu .box-ico img{
 
 main .main-menu .main-playlist {
   flex-grow: 1;
-  min-height: 250px;
+  min-height: 150px;
   overflow-y: hidden;
+}
+
+main .main-menu .main-playlist span::before{
+  content: '+';
+  display: inline-block;
+  text-align: center;
+  color: #000;
+  font-size: 30px;
+  font-weight: 700;
+  background-color: #acacac;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  vertical-align: middle;
+  margin-right: 8px;
 }
 
 main .main-menu .main-playlist ul{
   height: 100%;
   overflow-y: auto;
-
 }
 
 main .main-menu .main-playlist h3{
   text-transform: uppercase;
+  margin: 15px 0;
 }
 
 main .main-menu .menu-nav-bottom .app-install,
