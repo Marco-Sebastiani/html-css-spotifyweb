@@ -27,6 +27,10 @@ ul{
   padding-right: 20px;
 }
 
+.p-l-btn{
+  padding-left: 17px;
+}
+
 .container {
   width: 100%;
   height: 100vh;
@@ -66,7 +70,7 @@ main .main-menu .img-diplay-xs{
 }
 
 main .main-menu .img-diplay-xs img{
-  width: 15%;
+  width: 27px;
 }
 
 main .main-menu .box-ico .border-lime{
@@ -81,7 +85,7 @@ main .main-menu .box-ico span {
 }
 
 main .main-menu .box-ico img{
-  width: 15%;
+  width: 27px;
   color: #ababab;
   vertical-align: middle;
 }
@@ -190,25 +194,56 @@ footer {
 
 
 @media screen and (max-width: 600px) {
-  main .main-menu .logo-menu.img-display-lg{
-    display: none;
-  }
 
   main .main-menu .img-diplay-xs{
     display: block;
     margin-top: 5px;
   }
 
-  main .box-ico span{
+  main .main-menu .logo-menu.img-display-lg,
+  main .box-ico span,
+  main .main-playlist,
+  main .menu-nav-bottom span{
     display: none;
   }
 
-  main .main-playlist{
+  main .main-menu .menu-nav-bottom .app-install{
+    border-bottom: 1px solid #000;
+  }
+
+  main .main-menu .box-ico .border-lime{
+    border-left: 3px solid #000;
+  }
+
+  main .main-menu{
+    width: 50px;
+  }
+
+  main .box-main-content{
+    width: calc(100% - 50px);
+  }
+
+  main .box-main-content .cta{
+    width: calc(100% - 50px);
+  }
+
+  .p-l{
+    padding-left: 13px;
+  }
+  .p-r{
+    padding-right: 0;
+  }
+
+  .p-l-btn{
+    padding-left: 10px;
+  }
+  /* main .main-playlist{
     display: none;
   }
 
   main .menu-nav-bottom{
     display: none;
-  }
+  } */
+
 
 }
