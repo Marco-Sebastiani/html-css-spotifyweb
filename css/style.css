@@ -45,11 +45,20 @@ main .main-menu li{
 main .main-menu .logo-menu{
   height: 85px;
   line-height: 85px;
+
 }
 
 main .main-menu .logo-menu img{
   width: 70%;
   vertical-align: middle;
+}
+
+main .main-menu .img-diplay-xs{
+  display: none;
+}
+
+main .main-menu .img-diplay-xs img{
+  width: 15%;
 }
 
 main .main-menu .box-ico span {
@@ -159,4 +168,20 @@ footer {
   bottom:0;
   left: 0;
   background-color: grey;
+}
+
+
+@media screen and (max-width: 600px) {
+  main .main-menu .logo-menu.img-display-lg{
+    display: none;
+  }
+
+  main .main-menu .img-diplay-xs{
+    display: block;
+    margin-top: 5px;
+  }
+
+  .box-ico span{
+    display: none;
+  }
 }
