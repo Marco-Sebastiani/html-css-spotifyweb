@@ -11,7 +11,15 @@ body{
 
 a{
   text-decoration: none;
-  color: #ababab;
+  color: #ccc;
+  opacity: 0.4;
+}
+
+a:hover,
+a:focus,
+a:active{
+  color:#fff;
+  opacity: 1;
 }
 
 ul{
@@ -21,6 +29,7 @@ ul{
 
 .p-l{
   padding-left: 20px;
+  border-left: 3px solid transparent;
 }
 
 .p-r{
@@ -73,7 +82,7 @@ main .main-menu .img-diplay-xs img{
   width: 27px;
 }
 
-main .main-menu .box-ico .border-lime{
+main .main-menu .box-ico .active{
   border-left: 3px solid #adff2f;
 }
 
@@ -140,16 +149,18 @@ main .main-menu .menu-nav-bottom .user span{
   font-weight: 700;
 }
 
-main .main-menu .menu-nav-bottom .app-install img,
-main .main-menu .menu-nav-bottom .user img {
-  width: 20px;
+main .main-menu .menu-nav-bottom .app-install img {
+  width: 15px;
   vertical-align: middle;
   margin-right: 10px;
 }
 
 main .main-menu .menu-nav-bottom .user img{
+  width: 25px;
   background-color: grey;
   border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 10px;
 }
 
 main .box-main-content {
@@ -167,20 +178,28 @@ main .box-main-content .cta {
   background-color: rgba(0, 0, 0, 0.52);
   width: calc(100% - 220px);
   height: 85px;
-  line-height: 85px;
   text-align: right;
+  padding: 20px;
 }
 main .box-main-content .cta .btn {
-  padding: 10px 27px;
+  display: inline-block;
+  padding: 10px 30px;
   border-radius: 20px;
   border: 1px solid #fff;
-  margin-right:20px;
+  /* margin-right:20px; */
+  vertical-align: middle;
 }
 
-.cta a.btn {
+main .box-main-content .cta a.btn {
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+main .box-main-content .cta a.btn:hover,
+main .box-main-content .cta a.btn:active,
+main .box-main-content .cta a.btn:focus{
+  transform: scale(1.1);
 }
 
 footer {
@@ -211,7 +230,14 @@ footer {
     border-bottom: 1px solid #000;
   }
 
-  main .main-menu .box-ico .border-lime{
+  main .main-menu .menu-nav-bottom{
+    display: flex;
+    flex-grow: 2;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  main .main-menu .box-ico .active{
     border-left: 3px solid #000;
   }
 
@@ -228,15 +254,12 @@ footer {
   }
 
   .p-l{
-    padding-left: 13px;
+    padding-left: 10px;
   }
   .p-r{
     padding-right: 0;
   }
 
-  .p-l-btn{
-    padding-left: 10px;
-  }
   /* main .main-playlist{
     display: none;
   }
