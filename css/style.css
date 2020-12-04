@@ -26,7 +26,6 @@ ul{
   list-style: none;
 }
 
-
 .p-l{
   padding-left: 20px;
   border-left: 3px solid transparent;
@@ -86,8 +85,6 @@ main .main-menu .box-ico .active{
   border-left: 3px solid #adff2f;
 }
 
-
-
 main .main-menu .box-ico span {
   padding-left: 6px;
   font-size: 13px;
@@ -105,7 +102,6 @@ main .main-menu .main-playlist {
   overflow-y: hidden;
   padding-left: 20px;
 }
-
 
 main .main-menu .main-playlist span::before{
   content: '+';
@@ -163,12 +159,17 @@ main .main-menu .menu-nav-bottom .user img{
   margin-right: 10px;
 }
 
+/* MAIN CONTENT */
+
 main .box-main-content {
   width: calc(100% - 220px);
   height: 100%;
+  overflow-y: auto;
   padding-top: 85px;
   background-color: #141922;
 }
+
+/* CTA */
 
 main .box-main-content .cta {
   position: fixed;
@@ -186,6 +187,7 @@ main .box-main-content .cta .btn {
   padding: 10px 30px;
   border-radius: 20px;
   border: 1px solid #fff;
+  font-size: 14px;
   /* margin-right:20px; */
   vertical-align: middle;
 }
@@ -201,6 +203,37 @@ main .box-main-content .cta a.btn:active,
 main .box-main-content .cta a.btn:focus{
   transform: scale(1.1);
 }
+
+/* NAV BAR MAIN */
+main .box-main-content .nav-main {
+  width: 100%;
+  margin-top: 25px;
+  text-align: center;
+}
+
+main .box-main-content .nav-main ul li{
+  display: inline-block;
+}
+
+main .box-main-content .nav-main a {
+  position: relative;
+  margin: 10px;
+  padding-bottom: 5px;
+}
+
+main .box-main-content .nav-main a.active:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  content: '';
+  display: block;
+  height: 2px;
+  width: 30px;
+  background: greenyellow;
+}
+
+/* FOOTER */
 
 footer {
   width: 100%;
