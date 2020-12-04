@@ -11,16 +11,24 @@ body{
 
 a{
   text-decoration: none;
-  color: #ccc;
-  opacity: 0.4;
+  color: grey;
+
 }
 
 a:hover,
 a:focus,
 a:active{
   color:#fff;
-  opacity: 1;
 }
+
+.box-ico a img {
+  opacity: 0.6;
+}
+
+.box-ico a:hover img{
+  opacity: 1
+}
+
 
 ul{
   list-style: none;
@@ -56,6 +64,7 @@ main .main-menu {
   background-color: black;
   display: flex;
   flex-direction: column;
+  min-height: 450px;
 }
 
 main .main-menu li{
@@ -182,6 +191,7 @@ main .box-main-content .cta {
   text-align: right;
   padding: 20px;
 }
+
 main .box-main-content .cta .btn {
   display: inline-block;
   padding: 10px 30px;
@@ -207,7 +217,7 @@ main .box-main-content .cta a.btn:focus{
 /* NAV BAR MAIN */
 main .box-main-content .nav-main {
   width: 100%;
-  margin-top: 25px;
+  margin: 25px 0;
   text-align: center;
 }
 
@@ -232,6 +242,28 @@ main .box-main-content .nav-main a.active:after {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+}
+
+/* MAIN ALBUM MENU */
+main .album-main{
+  padding: 20px;
+}
+
+main .box-recently{
+  flex-basis: calc(100% / 6 - 13px);
+}
+
+main .box-recently .album-list{
+  display: flex;
+  padding-top: 20px;
+}
+
+main .box-recently .album-list .box-img-cover{
+  margin-right: 13px;
+}
+
+main .box-recently .album-list .box-img-cover img{
+  width: 100%;
 }
 
 /* FOOTER */
