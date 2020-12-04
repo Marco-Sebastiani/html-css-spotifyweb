@@ -219,18 +219,19 @@ main .box-main-content .nav-main a {
   position: relative;
   margin: 10px;
   padding-bottom: 5px;
+  text-transform: uppercase;
 }
 
 main .box-main-content .nav-main a.active:after {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
   content: '';
   display: block;
   height: 2px;
   width: 30px;
-  background: greenyellow;
+  background: #adff2f;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* FOOTER */
