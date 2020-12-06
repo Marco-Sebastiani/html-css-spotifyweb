@@ -21,6 +21,8 @@ a:active{
   color:#fff;
 }
 
+
+
 .box-ico a img {
   opacity: 0.6;
 }
@@ -32,6 +34,10 @@ a:active{
 
 ul{
   list-style: none;
+}
+
+.white{
+  color:#fff;
 }
 
 .p-l{
@@ -157,12 +163,11 @@ main .main-menu .menu-nav-bottom .user span{
 main .main-menu .menu-nav-bottom .app-install img {
   width: 15px;
   vertical-align: middle;
-  margin: 0 10px 0 5px;
+  margin-right: 10px ;
 }
 
 main .main-menu .menu-nav-bottom .user img{
   width: 25px;
-  background-color: grey;
   border-radius: 50%;
   vertical-align: middle;
   margin-right: 10px;
@@ -217,8 +222,9 @@ main .box-main-content .cta a.btn:focus{
 /* NAV BAR MAIN */
 main .box-main-content .nav-main {
   width: 100%;
-  margin: 25px 0;
+  margin: 15px 0;
   text-align: center;
+  line-height: 2;
 }
 
 main .box-main-content .nav-main ul li{
@@ -232,9 +238,15 @@ main .box-main-content .nav-main a {
   text-transform: uppercase;
 }
 
-main .box-main-content .nav-main a.active:after {
+
+
+/* SE CLICCHIAMO IL NAV MAIN L'AFTER SI SPOSTA SU OGNI ELEMENTO */
+main .box-main-content .nav-main a.special-active::after,
+main .box-main-content .nav-main a.active:hover::after,
+main .box-main-content .nav-main a.active:active::after,
+main .box-main-content .nav-main a.active:focus::after{
   content: '';
-  display: block;
+  display: inline-block;
   height: 2px;
   width: 30px;
   background: #adff2f;
@@ -244,35 +256,35 @@ main .box-main-content .nav-main a.active:after {
   transform: translateX(-50%);
 }
 
+
 /* MAIN ALBUM MENU */
-main .album-main.main-row{
+main .box-main-content .main-row{
   padding: 20px;
 }
 
-main .box-recently .album-list{
+main .box-main-content .album-list{
   display: flex;
   flex-wrap: wrap;
   padding: 20px 0;
 }
 
-main .box-recently .album-list .li-item{
+main .box-main-content .li-item{
   width: calc(100% / 6 - 13px);
   margin-right: 13px;
+  cursor: pointer;
+
 }
 
-main .box-recently .album-list .box-img-cover{
+main .box-main-content .album-list .box-img-cover{
   position: relative;
-  display: flex;
-  width: 100%;
   margin-bottom: 20px;
 }
 
-main .box-recently .album-list .box-img-cover img{
+main .box-main-content .album-list .box-img-cover img{
   max-width: 100%;
-
 }
 
-main .box-recently .album-list .box-img-cover .layover i{
+main .box-main-content .album-list .box-img-cover .layover i{
   position: absolute;
   display: none;
   font-size: 50px;
@@ -281,27 +293,44 @@ main .box-recently .album-list .box-img-cover .layover i{
   transform: translate(-50%, -50%);
 }
 
-main .box-recently .album-list .box-img-cover .layover{
+main .box-main-content .album-list .box-img-cover .layover{
   position: absolute;
   width: 100%;
-  height: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  height: calc(100% - 4px);
+  top: 0%;
+  left: 0%;
 }
 
-main .box-recently .album-list .li-item:hover .box-img-cover .layover ,
-main .box-recently .album-list .li-item:hover .box-img-cover .layover i{
+main .box-main-content .album-list .li-item:hover .box-img-cover .layover ,
+main .box-main-content .album-list .li-item:hover .box-img-cover .layover i{
   background-color: rgba(0, 0, 0, 0.5);
-  cursor: pointer;
   display: inline-block;
 }
 
-/* main .box-recently .album-list .li-item:hover .box-img-cover .layover i {
-  display: inline-block;
-} */
+main .box-main-content .album-list .li-item .box-text{
+  text-align: center;
+}
 
+main .box-main-content p{
+  color: #ababab;
+  font-size: 13px;
+  margin: 15px 0;
+  opacity: 0.7;
+}
 
+main .box-main-content .album-list .li-item .box-text h3{
+  line-height: 1.1;
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+
+main .box-main-content #popular-artist .album-list .box-img-cover img{
+  border-radius: 50%;
+}
+
+main .box-main-content #popular-artist .album-list .box-img-cover .layover {
+  border-radius: 50%;
+}
 /* FOOTER */
 
 footer {
@@ -315,8 +344,15 @@ footer {
 
 
 @media screen and (max-width: 1100px) {
-  main .box-recently .album-list .li-item{
+  main .box-main-content .album-list .li-item{
     width: calc(100% / 4 - 15px);
+  }
+}
+
+@media screen and (max-width: 700px){
+  main .box-main-content .album-list .li-item{
+    width: calc(100% / 2 - 12px);
+    margin-right: 12px;
   }
 }
 
@@ -337,6 +373,10 @@ footer {
 
   main .main-menu .menu-nav-bottom .app-install{
     border-bottom: 1px solid #000;
+  }
+
+  main .main-menu .menu-nav-bottom .app-install img{
+    margin-left: 5px;
   }
 
   main .main-menu .menu-nav-bottom{

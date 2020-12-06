@@ -27,7 +27,7 @@
       <div class="box-ico">
         <ul>
           <li class="active p-l">
-            <a href="#"><img src="img/home.svg" alt="home"><span>Home</span>
+            <a href="#"><img src="img/home.svg" alt="home"><span class="white">Home</span>
             </a>
           </li>
           <li class="p-l">
@@ -61,13 +61,14 @@
           </a>
         </div>
         <div class="user">
-          <a href="#"><img src="img/profile.svg" alt="profile"><span>Marco Sebastiani</span>
+          <a href="#"><img src="img/doggy-1.jpeg" alt="profile"><span>Marco Sebastiani</span>
           </a>
         </div>
       </div>
     </section>
     <!-- MENU PLAYLIST -->
 
+    <!-- SECTION ITEM MAIN -->
     <section class="box-main-content">
       <div class="cta">
         <a href="#" class="btn">Effettua l'upgrade</a>
@@ -75,26 +76,32 @@
       <!-- NAV BAR MAIN -->
       <nav class="nav-main">
         <ul>
-          <li><a href="#" class="active">in evidenza</a></li>
-          <li><a href="#">podcast</a></li>
-          <li><a href="#">classifiche</a></li>
-          <li><a href="#">generi e mood</a></li>
-          <li><a href="#">nuove uscite</a></li>
-          <li><a href="#">scopri</a></li>
+          <!-- SE CLICCHIAMO IL NAV MAIN L'AFTER SI SPOSTA SU OGNI ELEMENTO  -->
+          <li><a href="#" class="active special-active">in evidenza</a></li>
+          <li><a href="#" class="active ">podcast</a></li>
+          <li><a href="#" class="active">classifiche</a></li>
+          <li><a href="#" class="active">generi e mood</a></li>
+          <li><a href="#" class="active">nuove uscite</a></li>
+          <li><a href="#" class="active">scopri</a></li>
         </ul>
       </nav>
       <!-- / NAV BAR MAIN -->
 
       <!-- SECTION ALBUM MAIN -->
-      <section class="album-main main-row">
+      <section id="album-main" class="main-row">
         <!-- RECENTLY BOX -->
         <div class="box-recently">
           <h2>Recently played</h2>
           <ul class="album-list">
+
             <li class="li-item">
               <div class="box-img-cover">
                 <img src="img/metal_lifting.jpg" alt="metal_lifting">
                 <div class="layover"><i class="far fa-play-circle"></i></div>
+              </div>
+              <div class="box-text">
+                <h3>Heavy Metal</h3>
+                <p>Alternative Metal, Groove Metal, Thrash Metal</p>
               </div>
             </li>
 
@@ -103,12 +110,20 @@
                 <img src="img/stranger.jpeg" alt="stranger">
                 <div class="layover"><i class="far fa-play-circle"></i></div>
               </div>
+              <div class="box-text">
+                <h3>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h3>
+                <p>Kyle Dixon &amp; Michael Stein</p>
+              </div>
             </li>
 
             <li class="li-item">
               <div class="box-img-cover">
                 <img src="img/aquietplace.jpeg" alt="aquietplace">
                 <div class="layover"><i class="far fa-play-circle"></i></div>
+              </div>
+              <div class="box-text">
+                <h3>A quiet place</h3>
+                <p>Marco Beltrami</p>
               </div>
             </li>
 
@@ -117,6 +132,10 @@
                 <img src="img/split.jpeg" alt="split">
                 <div class="layover"><i class="far fa-play-circle"></i></div>
               </div>
+              <div class="box-text">
+                <h3>Split</h3>
+                <p>By &quot;Unbreakable&quot; trilogy</p>
+              </div>
             </li>
 
             <li class="li-item">
@@ -124,12 +143,20 @@
                 <img src="img/cure.jpeg" alt="cure">
                 <div class="layover"><i class="far fa-play-circle"></i></div>
               </div>
+              <div class="box-text">
+                <h3>A cure for wellness</h3>
+                <p>Benjamin Wallfisch</p>
+              </div>
             </li>
 
             <li class="li-item">
               <div class="box-img-cover">
                 <img src="img/sinister.jpeg" alt="sinister">
                 <div class="layover"><i class="far fa-play-circle"></i></div>
+              </div>
+              <div class="box-text">
+                <h3>Sinister</h3>
+                <p>Christopher Young</p>
               </div>
             </li>
           </ul>
@@ -139,8 +166,64 @@
       </section>
       <!-- / SECTION ALBUM MAIN -->
 
+      <!-- SECTION CREATED FOR JOHN -->
+      <section id="created" class="main-row">
+          <h2>Creato per John Doe</h2>
+          <p>Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti.</p>
+          <ul class="album-list">
+
+            <li class="li-item">
+              <div class="box-img-cover">
+                <img src="img/radar.jpeg" alt="radar">
+                <div class="layover"><i class="far fa-play-circle"></i></div>
+              </div>
+              <div class="box-text">
+                <h3>Release Radar</h3>
+              </div>
+            </li>
+
+            <li class="li-item">
+              <div class="box-img-cover">
+                <img src="img/mixdaily.jpeg" alt="mixdaily">
+                <div class="layover"><i class="far fa-play-circle"></i></div>
+              </div>
+              <div class="box-text">
+                <h3>Daily Mix 1</h3>
+              </div>
+            </li>
+          </ul>
+      </section>
+      <!--/ SECTION CREATED FOR JOHN -->
+      <!-- SECTION ALBUM POPULAR -->
+      <section id="popular-artist" class="main-row">
+        <h2>Artisti pi&ugrave; popolari</h2>
+        <p>Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti.</p>
+        <ul class="album-list">
+          <li class="li-item">
+            <div class="box-img-cover">
+              <img src="img/youg.jpeg" alt="youg">
+              <div class="layover"><i class="far fa-play-circle"></i></div>
+            </div>
+            <div class="box-text">
+              <h3>Lana del Rey</h3>
+            </div>
+          </li>
+
+          <li class="li-item">
+            <div class="box-img-cover">
+              <img src="img/einaudi.jpeg" alt="einaudi">
+              <div class="layover"><i class="far fa-play-circle"></i></div>
+            </div>
+            <div class="box-text">
+              <h3>Ludovico Einaudi</h3>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!-- /SECTION ALBUM POPULAR -->
 
     </section>
+    <!-- /SECTION ITEM MAIN -->
 
   </main>
   <footer>
