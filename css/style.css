@@ -12,7 +12,6 @@ body{
 a{
   text-decoration: none;
   color: grey;
-
 }
 
 a:hover,
@@ -21,8 +20,6 @@ a:active{
   color:#fff;
 }
 
-
-
 .box-ico a img {
   opacity: 0.6;
 }
@@ -30,7 +27,6 @@ a:active{
 .box-ico a:hover img{
   opacity: 1
 }
-
 
 ul{
   list-style: none;
@@ -174,7 +170,6 @@ main .main-menu .menu-nav-bottom .user img{
 }
 
 /* MAIN CONTENT */
-
 main .box-main-content {
   width: calc(100% - 220px);
   height: 100%;
@@ -184,7 +179,6 @@ main .box-main-content {
 }
 
 /* CTA */
-
 main .box-main-content .cta {
   position: fixed;
   top:0;
@@ -239,7 +233,6 @@ main .box-main-content .nav-main a {
 }
 
 
-
 /* SE CLICCHIAMO IL NAV MAIN L'AFTER SI SPOSTA SU OGNI ELEMENTO */
 main .box-main-content .nav-main a.special-active::after,
 main .box-main-content .nav-main a.active:hover::after,
@@ -249,13 +242,12 @@ main .box-main-content .nav-main a.active:focus::after{
   display: inline-block;
   height: 2px;
   width: 30px;
-  background: #adff2f;
+  background-color: #adff2f;
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
 }
-
 
 /* MAIN ALBUM MENU */
 main .box-main-content .main-row{
@@ -331,17 +323,211 @@ main .box-main-content #popular-artist .album-list .box-img-cover img{
 main .box-main-content #popular-artist .album-list .box-img-cover .layover {
   border-radius: 50%;
 }
-/* FOOTER */
 
+/* FOOTER */
 footer {
   width: 100%;
   height: 85px;
   position: fixed;
   bottom:0;
   left: 0;
-  background-color: grey;
+  background-color: #282828;
+  z-index: 2;
 }
 
+footer #status-bar{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+}
+
+footer #status-bar .status-bar-left,
+footer #status-bar .status-bar-right{
+  flex-basis: 220px;
+  padding: 10px;
+}
+
+footer #status-bar .status-bar-left{
+  display: flex;
+  align-items: center;
+}
+
+footer #status-bar .status-bar-left .box-cover-status-bar{
+  flex-basis: 20%;
+}
+
+footer #status-bar .status-bar-left .box-cover-status-bar img{
+  width: 40px;
+}
+
+footer #status-bar .status-bar-left .status-bar-title{
+  width: 45%;
+  margin-left: 10px;
+  line-height: 1.1;
+}
+
+footer #status-bar .status-bar-left .status-bar-title h2 {
+  font-size: 12px;
+  color: #fff;
+}
+
+footer #status-bar .status-bar-left .status-bar-title p{
+  font-size: 10px;
+}
+
+footer #status-bar .status-bar-left  i{
+  padding-left: 11px;
+}
+
+footer #status-bar .status-bar-left .status-bar-title a:hover{
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* STATUS BAR CENTER CONSOLE ITEM */
+
+footer #status-bar .status-bar-center {
+  flex-basis: 40%;
+  height: 100%;
+}
+
+footer #status-bar .status-bar-center .status-bar-center-icon {
+  height: 50px;
+}
+
+footer #status-bar .status-bar-center .status-bar-center-icon ul {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+footer #status-bar .status-bar-center .status-bar-center-icon i{
+  margin: 8px;
+  font-size: 16px;
+}
+
+footer #status-bar .status-bar-center .status-bar-center-icon .icon-player {
+  width: 50px;
+  font-size: 30px;
+  text-align: center;
+}
+
+footer #status-bar .status-bar-center .status-bar-center-icon .icon-player:hover {
+  font-size: 32px;
+}
+
+/* STATUS BAR CENTER CONSOLE */
+
+footer #status-bar .status-bar-center .status-bar-center-console {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+footer #status-bar .status-bar-center .status-bar-center-console p.box-min {
+  width: 15%;
+  font-size: 80%;
+  text-align: center;
+}
+
+footer #status-bar .status-bar-center .status-bar-center-console .box-long-time {
+  width: 70%;
+  height: 4px;
+  background-color: #535353;
+  position: relative;
+  border-radius: 5px;
+}
+
+footer #status-bar .status-bar-center .status-bar-center-console .box-short-time {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100%;
+  background-color: #bababa;
+  border-radius: 5px;
+}
+
+footer #status-bar .status-bar-center .status-bar-center-console .box-short-time:hover::after {
+  content: "";
+  display: block;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  border-radius: 50px;
+  background-color: #bababa;
+}
+
+footer #status-bar .status-bar-center .status-bar-center-console .box-short-time:hover{
+  background-color:#adff2f;
+}
+
+footer #status-bar .status-bar-right {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+footer #status-bar .status-bar-right .box-bar-right-icon{
+  width: 60%;
+}
+
+footer #status-bar .status-bar-right i{
+  margin-right: 10px;
+  font-size: 75%;
+}
+
+footer #status-bar .status-bar-right .box-time{
+  width: 84%;
+  height: 4px;
+  background-color: #535353;
+  position: relative;
+  border-radius: 5px;
+}
+
+footer #status-bar .status-bar-right .box-time .box-time-line{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 23%;
+  height: 100%;
+  background-color: #bababa;
+  border-radius: 5px;
+}
+
+.debug.yellow{
+  background-color: lightblue;
+}
+
+.debug.green{
+  background-color: green;
+}
+
+footer #status-bar .status-bar-right .box-time .box-time-line:hover::after{
+  content: "";
+  display: block;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  background-color: #bababa;
+  border-radius: 50px;
+  transform: translateY(-50%);
+}
+
+footer #status-bar .status-bar-right .box-time .box-time-line:hover{
+  background-color:#adff2f;
+}
+
+/* MEDIA QUERY */
 
 @media screen and (max-width: 1100px) {
   main .box-main-content .album-list .li-item{
@@ -353,6 +539,24 @@ footer {
   main .box-main-content .album-list .li-item{
     width: calc(100% / 2 - 12px);
     margin-right: 12px;
+  }
+
+  footer #status-bar .status-bar-right {
+    flex-direction: column;
+  }
+
+  footer #status-bar .status-bar-right .box-bar-right-icon{
+    align-self: flex-end;
+  }
+
+  footer #status-bar .status-bar-right i{
+    margin-right: 5px;
+    font-size: 65%;
+    padding-bottom: 20px;
+  }
+
+  footer #status-bar .status-bar-center .status-bar-center-icon{
+    margin-top: 7px;
   }
 }
 
@@ -409,13 +613,57 @@ footer {
     padding-right: 0;
   }
 
-  /* main .main-playlist{
+
+}
+
+
+@media screen and (max-width: 480px) {
+  footer #status-bar .status-bar-left .box-cover-status-bar img{
     display: none;
   }
 
-  main .menu-nav-bottom{
-    display: none;
-  } */
+  footer #status-bar .status-bar-left .status-bar-title h2 {
+    margin-bottom: 5px;
+  }
 
+  footer #status-bar .status-bar-left .box-cover-status-bar{
+    flex-basis: 0;
+  }
+
+  footer #status-bar .status-bar-center .status-bar-center-icon ul li i{
+    padding: 4px;
+    font-size: 14px;
+  }
+
+  footer #status-bar .status-bar-left .status-bar-title{
+    margin-left: 0;
+  }
+
+  footer #status-bar .status-bar-left  i{
+    padding-left: 16px;
+  }
+
+
+  footer #status-bar .status-bar-center .status-bar-center-icon i{
+    margin: 0px;
+    font-size: 16px;
+  }
+
+  footer #status-bar .status-bar-center .status-bar-center-icon  .icon-player {
+    width: 30px;
+    margin: 8px;
+    font-size: 22px;
+  }
+
+  footer #status-bar .status-bar-center .status-bar-center-console p.box-min {
+    width: 40%;
+    font-size: 60%;
+
+  }
+
+  footer #status-bar .status-bar-left,
+  footer #status-bar .status-bar-right{
+    padding: 5px;
+  }
 
 }
