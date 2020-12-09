@@ -208,6 +208,11 @@ main .box-main-content .cta a.btn {
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
+  transition: color 1s;
+}
+
+main .box-main-content .cta a.btn:hover{
+  color: #adff2f;
 }
 
 main .box-main-content .cta a.btn:hover,
@@ -454,6 +459,7 @@ footer #status-bar .status-bar-center .status-bar-center-console .box-short-time
   height: 100%;
   background-color: #bababa;
   border-radius: 5px;
+  animation: score 60s forwards linear ;
 }
 
 footer #status-bar .status-bar-center .status-bar-center-console .box-short-time:hover::after {
@@ -532,6 +538,15 @@ footer #status-bar .status-bar-right .box-time .box-time-line:hover{
 }
 
 
+/* ANIMATION */
+@keyframes score{
+  0%   {width: 0%;}
+  25%  {width: 25%;}
+  50%  {width: 50%;}
+  75%  {width: 75%;}
+  100% {width: 100%;}
+}
+
 /* MEDIA QUERY */
 @media screen and (max-width: 1100px) {
   main .box-main-content .album-list .li-item{
@@ -571,7 +586,6 @@ footer #status-bar .status-bar-right .box-time .box-time-line:hover{
     display: none;
   }
 }
-
 
 @media screen and (max-width: 600px) {
 
@@ -624,10 +638,7 @@ footer #status-bar .status-bar-right .box-time .box-time-line:hover{
   .p-r{
     padding-right: 0;
   }
-
-
 }
-
 
 @media screen and (max-width: 480px) {
   footer #status-bar .status-bar-left .box-cover-status-bar img{
