@@ -537,6 +537,10 @@ footer #status-bar .status-bar-right .box-time .box-time-line:hover{
   main .box-main-content .album-list .li-item{
     width: calc(100% / 4 - 15px);
   }
+
+  .hidden{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 700px){
@@ -563,6 +567,9 @@ footer #status-bar .status-bar-right .box-time .box-time-line:hover{
     padding-bottom: 20px;
   }
 
+  .hidden-md{
+    display: none;
+  }
 }
 
 
@@ -612,7 +619,7 @@ footer #status-bar .status-bar-right .box-time .box-time-line:hover{
   }
 
   .p-l{
-    padding-left: 7px;
+    padding-left: 10px;
   }
   .p-r{
     padding-right: 0;
