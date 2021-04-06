@@ -9,6 +9,54 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 
+
+
+/* .box-main-content::-webkit-scrollbar-track{
+    background: rgb(185, 181, 181);
+    border:1px solid rgba(255, 255, 255, 0.1);
+    border-radius:10px;
+
+}
+.box-main-contenty::-webkit-scrollbar-thumb{
+    background: #adff2f ;
+    height:70px;
+    border-radius:10px;
+}
+.box-main-content::-webkit-scrollbar-thumb:hover{
+    background: #adff2f;
+}
+
+.box-main-content::-webkit-scrollbar{
+    background: #adff2f;
+    width: 5px;
+    height: 4px;
+} */
+
+
+
+.box-main-content::-webkit-scrollbar-track{
+    background: rgb(185, 181, 181);
+    border:1px solid rgba(255, 255, 255, 0.1);
+    border-radius:10px;
+}
+.box-main-content::-webkit-scrollbar-thumb{
+    background:#adff2f ;
+    height:70px;
+    border-radius:10px;
+}
+.box-main-content::-webkit-scrollbar-thumb:hover{
+    background: #3D3D3D;
+}
+
+.box-main-content::-webkit-scrollbar{
+    width: 5px;
+    height: 4px;
+
+}
+
+
+
+
 a{
   text-decoration: none;
   color: grey;
