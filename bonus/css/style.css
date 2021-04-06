@@ -285,7 +285,7 @@ main .box-main-content .album-list .box-img-cover img{
 
 main .box-main-content .album-list .box-img-cover .layover i{
   position: absolute;
-  display: none;
+  border-radius: 50%;
   font-size: 50px;
   top: 50%;
   left: 50%;
@@ -293,17 +293,20 @@ main .box-main-content .album-list .box-img-cover .layover i{
 }
 
 main .box-main-content .album-list .box-img-cover .layover{
+  opacity: 0;
   position: absolute;
   width: 100%;
   height: calc(100% - 4px);
   top: 0%;
   left: 0%;
+  transition: all 0.5s;
 }
 
 main .box-main-content .album-list .li-item:hover .box-img-cover .layover ,
 main .box-main-content .album-list .li-item:hover .box-img-cover .layover i{
-  background-color: rgba(0, 0, 0, 0.5);
-  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 1;
+
 }
 
 main .box-main-content .album-list .li-item .box-text{
